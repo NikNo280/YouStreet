@@ -1,0 +1,126 @@
+﻿
+@model YouStreet.ViewModels.RegisterViewModel
+
+<div class="col-md-8 order-md-1">
+    <h4 class="mb-3">Billing address</h4>
+    <form class="needs-validation" novalidate="" method="post" asp-controller="Account" asp-action="Register">
+        <div asp-validation-summary="ModelOnly"></div>
+        <div class="mb-3">
+            <label asp-for="UserName" for="username">Username</label>
+            <div class="input-group">
+                <input asp-for="UserName" type="text" class="form-control" id="username" placeholder="Username" required="">
+                <span asp-validation-for="UserName"></span>
+                <div class="invalid-feedback" style="width: 100%;">
+                    Your username is required.
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Email" for="email">Email <span class="text-muted">(Optional)</span></label>
+            <input asp-for="Email" type="email" class="form-control" id="email" placeholder="you@example.com">
+            <span asp-validation-for="Email"></span>
+            <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+            </div>
+        </div>
+        <div>
+            <label asp-for="Password"></label><br />
+            <input asp-for="Password" />
+            <span asp-validation-for="Password"></span>
+        </div>
+        <div>
+            <label asp-for="PasswordConfirm"></label><br />
+            <input asp-for="PasswordConfirm" />
+            <span asp-validation-for="PasswordConfirm"></span>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label asp-for="FirstName" for="firstName">First name</label>
+                <input asp-for="FirstName" type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                <span asp-validation-for="FirstName"></span>
+                <div class="invalid-feedback">
+                    Valid first name is required.
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label asp-for="SecondName" for="lastName">Last name</label>
+                <input asp-for="SecondName" type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                <span asp-validation-for="SecondName"></span>
+                <div class="invalid-feedback">
+                    Valid last name is required.
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label asp-for="Year" for="Year">Year</label>
+                <input asp-for="Year" type="number" class="form-control" id="firstName" placeholder="" value="" required="">
+                <span asp-validation-for="Year"></span>
+                <div class="invalid-feedback">
+                    Please enter your Year.
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label asp-for="Gender" for="Gender">Gender</label>
+                <select asp-for="Gender" class="custom-select d-block w-100" id="Gender" required="">
+                    <option value="">Choose...</option>
+                    <option>Мужчина</option>
+                    <option>Женщина</option>
+                </select>
+                <span asp-validation-for="Gender"></span>
+                <div class="invalid-feedback">
+                    Please select a valid Gender.
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5 mb-3">
+                <label asp-for="Country" for="country">Country</label>
+                <select asp-for="Country" class="custom-select d-block w-100" id="country" required="">
+                    <option value="">Choose...</option>
+                    <option>Беларусь</option>
+                    <option>Россия</option>
+                    <option>Украина</option>
+                    <option>Казахстан</option>
+                </select>
+                <span asp-validation-for="Country"></span>
+                <div class="invalid-feedback">
+                    Please select a valid country.
+                </div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label asp-for="City" for="city">City</label>
+            <input asp-for="City" type="text" class="form-control" id="address" placeholder="City" required="">
+            <span asp-validation-for="City"></span>
+            <div class="invalid-feedback">
+                Please enter your shipping address.
+            </div>
+        </div>
+        <div class="mb-3">
+            <label asp-for="District" for="District">District</label>
+            <input asp-for="District" type="text" class="form-control" id="address" placeholder="District" required="">
+            <span asp-validation-for="District"></span>
+            <div class="invalid-feedback">
+                Please enter your shipping address.
+            </div>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Street" for="address">Street</label>
+            <input asp-for="Street" type="text" class="form-control" id="address" placeholder="Street" required="">
+            <span asp-validation-for="Street"></span>
+            <div class="invalid-feedback">
+                Please enter your shipping address.
+            </div>
+        </div>
+        <hr class="mb-4">
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="save-info">
+            <label class="custom-control-label" for="save-info">I agree to the sale of my personal data</label>
+        </div>
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Finish registration</button>
+    </form>
+
+</div>

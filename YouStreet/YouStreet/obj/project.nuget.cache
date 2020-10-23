@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3pOyHznYXE0QgdoRZ8taSvzF77TqVzQozVybhcLgZEOCNnvBLlwIloYDzHaWoC++zIqOjHQ84Svfi7+CXZz6ag==",
+  "dgSpecHash": "7OiM/X7OGSHAUxudi9INNJtKYi2KR/6VfqqWr3EpDLg9259SE3c10bwvVDxXXx4zJMN6DboXuEs2oVry+ROCPg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nikit\\source\\repos\\YouStreet\\YouStreet\\YouStreet.csproj",
+  "projectFilePath": "C:\\Users\\nikit\\OneDrive\\Documents\\GitHub\\YouStreet\\YouStreet\\YouStreet\\YouStreet.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nikit\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\nikit\\.nuget\\packages\\microsoft.aspnet.identity.core\\2.2.3\\microsoft.aspnet.identity.core.2.2.3.nupkg.sha512",

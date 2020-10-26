@@ -2,8 +2,10 @@
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
+using YouStreet.Data.Models;
 
 namespace YouStreet.Models
 {
@@ -16,9 +18,7 @@ namespace YouStreet.Models
         public string City { get; set; }
         public string Street { get; set; }
         public string District { get; set; }
-        public FileModel Avatar { get; set; }
-        public FileModel Gallary { get; set; }
-        public List<User> Friends { get; set; }
+        public string Avatar { get; set; }
         public string Gender { get; set; }
         public uint Year { get; set; }
         public DateTime RegistrationDate { get; set; }
@@ -27,11 +27,5 @@ namespace YouStreet.Models
             return FirstName + " " + SecondName;
         }
     }
-
-    public class FileModel
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string Path { get; set; }
-    }
+ 
 }

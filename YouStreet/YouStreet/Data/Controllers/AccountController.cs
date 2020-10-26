@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using YouStreet.Data.Interfaces;
+using YouStreet.Data.Models;
 using YouStreet.Data.Validator;
 using YouStreet.Models;
 using YouStreet.ViewModels;
@@ -47,7 +48,8 @@ namespace YouStreet.Data.Controllers
                     UserName = model.UserName,
                     Year = model.Year,
                     Gender = model.Gender,
-                    RegistrationDate = DateTime.Now
+                    RegistrationDate = DateTime.Now,
+                    Avatar = @"~/img/first_avatar.jpeg"
                 };
                 // добавляем пользователя
                 var result = await _userManager.CreateAsync(user, model.Password);

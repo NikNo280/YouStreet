@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using YouStreet.Data.Models;
 
 namespace YouStreet.Models
 {
@@ -16,5 +17,6 @@ namespace YouStreet.Models
         }
 
         public DbSet<User> User { get; set; }
+        public DbSet<FileModel> File { get; set; }
     }
 }

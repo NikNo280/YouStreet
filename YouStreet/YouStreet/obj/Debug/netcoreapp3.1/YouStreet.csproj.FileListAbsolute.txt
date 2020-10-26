@@ -185,8 +185,15 @@ C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\obj\Debug
 C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\obj\Debug\netcoreapp3.1\YouStreet.genruntimeconfig.cache
 C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\obj\Debug\netcoreapp3.1\Razor\Views\Account\EditUser.cshtml.g.cs
+C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\obj\Debug\netcoreapp3.1\YouStreet.csproj.CoreCompileInputs.cache
 C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\obj\Debug\netcoreapp3.1\YouStreet.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\bin\Debug\netcoreapp3.1\Microsoft.Owin.dll
+C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\bin\Debug\netcoreapp3.1\Microsoft.Owin.Security.dll
+C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\bin\Debug\netcoreapp3.1\Microsoft.Owin.Security.Cookies.dll
+C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\bin\Debug\netcoreapp3.1\Microsoft.Owin.Security.OAuth.dll
+C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\bin\Debug\netcoreapp3.1\Owin.dll

@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNet.Identity;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using YouStreet.Data.Interfaces;
@@ -16,16 +18,22 @@ namespace YouStreet.Data.Controllers
 {
     public class AccountController : Controller
     {
-        private readonly Microsoft.AspNetCore.Identity.UserManager<User> _userManager;
-        private readonly SignInManager<User> _signInManager;
+        private readonly Microsoft.AspNetCore.Identity.UserManager<ApplicationUser> _userManager;
+        private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IUserDb UserDb;
+        private readonly ApplicationContext _context;
+        private readonly IWebHostEnvironment _appEnvironment;
 
-        public AccountController(Microsoft.AspNetCore.Identity.UserManager<User> userManager, SignInManager<User> signInManager, IUserDb UserDb)
+        public AccountController(ApplicationContext context, IWebHostEnvironment appEnvironment,
+            Microsoft.AspNetCore.Identity.UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, IUserDb UserDb)
         {
+            _context = context;
+            _appEnvironment = appEnvironment;
             _userManager = userManager;
             _signInManager = signInManager;
             this.UserDb = UserDb;
         }
+
         [HttpGet]
         public IActionResult Register()
         {
@@ -36,7 +44,7 @@ namespace YouStreet.Data.Controllers
         {
             if (ModelState.IsValid)
             {
-                User user = new User
+                ApplicationUser user = new ApplicationUser
                 {
                     FirstName = model.FirstName,
                     SecondName = model.SecondName,
@@ -116,8 +124,68 @@ namespace YouStreet.Data.Controllers
         [HttpGet]
         public IActionResult UserProfile()
         {
-            User user = UserDb.GetUser(User.Identity.GetUserId());
+            ApplicationUser user = UserDb.GetUser(User.Identity.GetUserId());
             return View(user);
+        }
+
+
+        [HttpGet]
+        public IActionResult EditUser()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> EditUser(EditUserViewModel model)
+        {
+            ApplicationUser user = UserDb.GetUser(User.Identity.GetUserId());
+            if(model.FirstName != null)
+            {
+                user.FirstName = model.FirstName;
+            }
+            if (model.SecondName != null)
+            {
+                user.SecondName = model.SecondName;
+            }
+            if (model.Email != null)
+            {
+                user.Email = model.Email;
+            }
+            if (model.Description != null)
+            {
+                user.Description = model.Description;
+            }
+            if (model.Country != null)
+            {
+                user.Country = model.Country;
+            }
+            if (model.City != null)
+            {
+                user.City = model.City;
+            }
+            if (model.District != null)
+            {
+                user.District = model.District;
+            }
+            if (model.Street != null)
+            {
+               // user.Street = model.Street;
+            }
+            if (model.UploadedFile != null)
+            {
+                // путь к папке Files
+                string path = "/Files/" + user.UserName + model.UploadedFile.FileName;
+                // сохраняем файл в папку Files в каталоге wwwroot
+                using (var fileStream = new FileStream(_appEnvironment.WebRootPath + path, FileMode.Create))
+                {
+                    await model.UploadedFile.CopyToAsync(fileStream);
+                }
+                user.Avatar = path;
+            }
+
+            await _userManager.UpdateAsync(user);
+
+            return RedirectToAction("UserProfile", "Account");
         }
 
         public ActionResult Create()

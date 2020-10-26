@@ -9,7 +9,7 @@ using YouStreet.Models;
 
 namespace YouStreet.Migrations
 {
-    [DbContext(typeof(ApplicationUser))]
+    [DbContext(typeof(ApplicationContext))]
     [Migration("20201026125005_hhss")]
     partial class hhss
     {

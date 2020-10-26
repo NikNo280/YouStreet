@@ -8,7 +8,7 @@ using YouStreet.Models;
 
 namespace YouStreet.Migrations
 {
-    [DbContext(typeof(ApplicationUser))]
+    [DbContext(typeof(ApplicationContext))]
     partial class ApplicationUserModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

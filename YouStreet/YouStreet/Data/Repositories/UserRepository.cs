@@ -12,15 +12,15 @@ namespace YouStreet.Data.Repositories
 {
     public class UserRepository : IUserDb
     {
-        private readonly ApplicationUser identityDbContext;
+        private readonly ApplicationContext identityDbContext;
 
-        public UserRepository(ApplicationUser identityDbContext)
+        public UserRepository(ApplicationContext identityDbContext)
         {
             this.identityDbContext = identityDbContext;
         }
-        public IEnumerable<User> GetAllUsers => identityDbContext.User.Include(c => c.Id);
+        public IEnumerable<ApplicationUser> GetAllUsers => identityDbContext.User.Include(c => c.Id);
 
-        public User GetUser(string UserId) => identityDbContext.User.FirstOrDefault(predicate => predicate.Id == UserId);
+        public ApplicationUser GetUser(string UserId) => identityDbContext.User.FirstOrDefault(predicate => predicate.Id == UserId);
 
     }
 }

@@ -32,9 +32,9 @@ namespace YouStreet
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<IUserDb, UserRepository>();
-            services.AddDbContext<ApplicationUser>(options => options.UseSqlServer(ConfSetting.GetConnectionString("DefaultConnection")));
-            services.AddIdentity<User, IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationUser>();
+            services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(ConfSetting.GetConnectionString("DefaultConnection")));
+            services.AddIdentity<ApplicationUser, IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationContext>();
             services.AddControllersWithViews();
         }
 

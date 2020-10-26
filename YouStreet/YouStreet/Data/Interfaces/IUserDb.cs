@@ -8,7 +8,7 @@ namespace YouStreet.Data.Interfaces
 {
     public interface IUserDb
     {
-        IEnumerable<User> GetAllUsers { get; }
-        User GetUser(string userId);
+        IEnumerable<ApplicationUser> GetAllUsers { get; }
+        ApplicationUser GetUser(string userId);
     }
 }

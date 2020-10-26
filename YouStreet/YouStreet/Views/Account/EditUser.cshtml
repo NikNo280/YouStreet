@@ -1,0 +1,44 @@
+﻿@model YouStreet.ViewModels.EditUserViewModel
+<div>
+    <form method="post" asp-controller="Account" asp-action="EditUser" enctype="multipart/form-data">
+        <div>
+            <input asp-for="FirstName" type="text" class="form-control" name="FirstName" placeholder="FirstName">
+        </div>
+        <div>
+            <input asp-for="SecondName" type="text" class="form-control" name="SecondName" placeholder="SecondName">
+        </div>
+        <div>
+            <input asp-for="Email" type="text" class="form-control" name="Email" placeholder="Email">
+        </div>
+        <div>
+            <input asp-for="Description" type="text" class="form-control" name="Description" placeholder="Description">
+        </div>
+        <div>
+            <div>
+                <select asp-for="Country" class="custom-select d-block w-100" id="country">
+                    <option value="">Choose...</option>
+                    <option>Беларусь</option>
+                    <option>Россия</option>
+                    <option>Украина</option>
+                    <option>Казахстан</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <input asp-for="City" type="text" class="form-control" id="address" placeholder="City">
+        </div>
+        <div>
+            <input asp-for="District" type="text" class="form-control" id="address" placeholder="District">
+        </div>
+        <div>
+            <input asp-for="Street" type="text" class="form-control" id="address" placeholder="Street" />
+        </div>
+        <h3>Выберите файл для загрузки</h3>
+        <div>
+            <input type="file" name="uploadedFile" /><br>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary btn-block" type="submit">Save</button>
+        </div><a class="forgot" href="UserProfile">Forgot your email or password?</a>
+    </form>
+</div>

@@ -20,7 +20,7 @@ namespace YouStreet.Data.Controllers
     {
         private readonly Microsoft.AspNetCore.Identity.UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
-        private readonly IUserDb UserDb;
+        private readonly IUserDb _userDb;
         private readonly ApplicationContext _context;
         private readonly IWebHostEnvironment _appEnvironment;
 
@@ -31,7 +31,7 @@ namespace YouStreet.Data.Controllers
             _appEnvironment = appEnvironment;
             _userManager = userManager;
             _signInManager = signInManager;
-            this.UserDb = UserDb;
+            _userDb = UserDb;
         }
 
         [HttpGet]
@@ -124,7 +124,7 @@ namespace YouStreet.Data.Controllers
         [HttpGet]
         public IActionResult UserProfile()
         {
-            ApplicationUser user = UserDb.GetUser(User.Identity.GetUserId());
+            ApplicationUser user = _userDb.GetUser(User.Identity.GetUserId());
             return View(user);
         }
 
@@ -138,7 +138,7 @@ namespace YouStreet.Data.Controllers
         [HttpPost]
         public async Task<IActionResult> EditUser(EditUserViewModel model)
         {
-            ApplicationUser user = UserDb.GetUser(User.Identity.GetUserId());
+            ApplicationUser user = _userDb.GetUser(User.Identity.GetUserId());
             if(model.FirstName != null)
             {
                 user.FirstName = model.FirstName;
@@ -188,9 +188,5 @@ namespace YouStreet.Data.Controllers
             return RedirectToAction("UserProfile", "Account");
         }
 
-        public ActionResult Create()
-        {
-            return View();
-        }
     }
 }

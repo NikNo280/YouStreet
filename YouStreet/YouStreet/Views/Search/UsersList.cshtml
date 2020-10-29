@@ -1,0 +1,34 @@
+﻿@model List<ApplicationUser>
+@{
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Имя</th>
+            <th>Фамилия</th>
+            <th>Страна</th>
+            <th>Город</th>
+            <th>Район</th>
+            <th>Улица</th>
+            <th>Год рождения</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+        <tr>
+            <td><img src=@Url.Content(user.Avatar) style="        width: 50px;
+        height: 50px;"></td>
+            <td>@user.FirstName</td>
+            <td>@user.SecondName</td>
+            <td>@user.Country</td>
+            <td>@user.City</td>
+            <td>@user.District</td>
+            <td>@user.Street</td>
+            <td>@user.Year</td>
+            <td><a asp-action="UserProfile" asp-controller="Search" asp-route-id="@user.Id">Подробнее</a></td>
+        </tr>
+        }
+    </tbody>
+</table>

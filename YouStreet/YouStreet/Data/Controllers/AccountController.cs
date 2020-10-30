@@ -169,7 +169,7 @@ namespace YouStreet.Data.Controllers
             }
             if (model.Street != null)
             {
-               // user.Street = model.Street;
+                user.Street = model.Street;
             }
             if (model.UploadedFile != null)
             {

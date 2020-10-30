@@ -1,6 +1,42 @@
-﻿@model List<ApplicationUser>
+﻿@model YouStreet.ViewModels.SearchUsersViewModels
 @{
 }
+
+<form method="get">
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <label asp-for="FirstName" for="firstName">First name</label>
+            <input asp-for="FirstName" type="text" class="form-control" id="firstName" placeholder="" value="">
+        </div>
+        <div class="col-md-6 mb-4">
+            <label asp-for="SecondName" for="lastName">Last name</label>
+            <input asp-for="SecondName" type="text" class="form-control" id="lastName" placeholder="" value="">
+        </div>
+        <div class="col-md-6 mb-3">
+            <label asp-for="Country" for="Country">Country</label>
+            <input asp-for="Country" type="text" class="form-control" id="Country" placeholder="" value="">
+        </div>
+        <div class="col-md-6 mb-3">
+            <label asp-for="City" for="City">City</label>
+            <input asp-for="City" type="text" class="form-control" id="City" placeholder="" value="">
+        </div>
+        <div class="col-md-6 mb-3">
+            <label asp-for="District" for="District">District</label>
+            <input asp-for="District" type="text" class="form-control" id="District" placeholder="" value="">
+        </div>
+        <div class="col-md-6 mb-3">
+            <label asp-for="Street" for="Country">Street</label>
+            <input asp-for="Street" type="text" class="form-control" id="Street" placeholder="" value="">
+        </div>
+        <div class="col-md-6 mb-3">
+            <label asp-for="Year" for="Country">Year</label>
+            <input asp-for="Year" type="number" class="form-control" id="Year" placeholder="" value="">
+        </div>
+    </div>
+    <hr class="mb-4">
+    <button class="btn btn-primary btn-lg btn-block" type="submit">Filter</button>
+</form>
+
 <table class="table">
     <thead>
         <tr>
@@ -15,7 +51,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var user in Model)
+        @foreach (var user in Model.Users)
         {
         <tr>
             <td><img src=@Url.Content(user.Avatar) style="        width: 50px;

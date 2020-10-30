@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using YouStreet.Data.Interfaces;
 using YouStreet.Models;
+using YouStreet.ViewModels;
 
 namespace YouStreet.Data.Controllers
 {
@@ -21,11 +22,42 @@ namespace YouStreet.Data.Controllers
             _userDb = UserDb;
         }
 
-        [HttpGet]
-        public IActionResult UsersList()
+        public IActionResult UsersList(string FirstName, string SecondName, string Country, string City, string Street, string District, int? Year)
         {
-            List<ApplicationUser> Users = _context.User.AsNoTracking().ToList();
-            return View(Users);
+            IQueryable<ApplicationUser> Users = _context.User.AsNoTracking();
+            if (!String.IsNullOrEmpty(FirstName) && !FirstName.Equals(""))
+            {
+                Users = Users.Where(p => p.FirstName == FirstName);
+            }
+            if (!String.IsNullOrEmpty(SecondName) && !SecondName.Equals(""))
+            {
+                Users = Users.Where(p => p.SecondName == SecondName);
+            }
+            if (!String.IsNullOrEmpty(Country) && !Country.Equals(""))
+            {
+                Users = Users.Where(p => p.Country == Country);
+            }
+            if (!String.IsNullOrEmpty(City) && !City.Equals(""))
+            {
+                Users = Users.Where(p => p.City == City);
+            }
+            if (!String.IsNullOrEmpty(Street) && !Street.Equals(""))
+            {
+                Users = Users.Where(p => p.Street == Street);
+            }
+            if (!String.IsNullOrEmpty(District) && !District.Equals(""))
+            {
+                Users = Users.Where(p => p.District == District);
+            }
+            if (Year != null && Year != 0)
+            {
+                Users = Users.Where(p => p.Year == Year);
+            }
+            SearchUsersViewModels suvm = new SearchUsersViewModels
+            {
+                Users = Users.ToList()
+            };
+            return View(suvm);
         }
         
         public async Task<IActionResult> UserProfile(string id)

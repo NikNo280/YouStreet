@@ -18,5 +18,6 @@ namespace YouStreet.Models
 
         public DbSet<ApplicationUser> User { get; set; }
         public DbSet<FileModel> File { get; set; }
+        public DbSet<UserMessage> UserMessage { get; set; }
     }
 }

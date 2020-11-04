@@ -15,11 +15,9 @@ namespace YouStreet.Data.Controllers
     public class SearchController : Controller
     {
         private readonly ApplicationContext _context;
-        private readonly IUserDb _userDb;
-        public SearchController(ApplicationContext db, IUserDb UserDb)
+        public SearchController(ApplicationContext db)
         {
             _context = db;
-            _userDb = UserDb;
         }
 
         public IActionResult UsersList(string FirstName, string SecondName, string Country, string City, string Street, string District, int? Year)
@@ -66,9 +64,18 @@ namespace YouStreet.Data.Controllers
             {
                 ApplicationUser user = await _context.Users.FirstOrDefaultAsync((p => p.Id == id));
                 if (user != null)
+                {
                     return View(user);
+                }
             }
             return NotFound();
         }
+
+        public IActionResult SendMessage(string id)
+        {
+            TempData["UserId"] = id;
+            return RedirectToAction("Chat", "Chat", new { userId = id });
+        }
     }
 }
+

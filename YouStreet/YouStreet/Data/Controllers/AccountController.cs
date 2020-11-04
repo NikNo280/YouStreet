@@ -21,13 +21,11 @@ namespace YouStreet.Data.Controllers
         private readonly Microsoft.AspNetCore.Identity.UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IUserDb _userDb;
-        private readonly ApplicationContext _context;
         private readonly IWebHostEnvironment _appEnvironment;
 
-        public AccountController(ApplicationContext context, IWebHostEnvironment appEnvironment,
-            Microsoft.AspNetCore.Identity.UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, IUserDb UserDb)
+        public AccountController(IWebHostEnvironment appEnvironment, Microsoft.AspNetCore.Identity.UserManager<ApplicationUser> userManager, 
+            SignInManager<ApplicationUser> signInManager, IUserDb UserDb)
         {
-            _context = context;
             _appEnvironment = appEnvironment;
             _userManager = userManager;
             _signInManager = signInManager;

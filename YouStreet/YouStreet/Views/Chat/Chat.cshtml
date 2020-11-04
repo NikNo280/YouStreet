@@ -1,0 +1,12 @@
+﻿@model YouStreet.ViewModels.MessageViewModel
+
+
+<div>
+    <form method="post" asp-controller="Chat" asp-action="Chat">
+        <div>
+            <input asp-for="Text" class="form-control" type="text" name="Text">
+            <span asp-validation-for="Text"></span>
+        </div>
+        <button class="btn btn-primary btn-block" type="submit">Send</button>
+    </form>
+</div>

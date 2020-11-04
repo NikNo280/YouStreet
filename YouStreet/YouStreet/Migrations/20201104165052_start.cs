@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace YouStreet.Migrations
 {
-    public partial class hhss : Migration
+    public partial class start : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -69,6 +69,21 @@ namespace YouStreet.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_File", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "UserMessage",
+                columns: table => new
+                {
+                    Id = table.Column<string>(nullable: false),
+                    Text = table.Column<string>(nullable: true),
+                    Date = table.Column<DateTime>(nullable: false),
+                    SenderId = table.Column<string>(nullable: true),
+                    ReaderId = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_UserMessage", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -236,6 +251,9 @@ namespace YouStreet.Migrations
 
             migrationBuilder.DropTable(
                 name: "File");
+
+            migrationBuilder.DropTable(
+                name: "UserMessage");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");

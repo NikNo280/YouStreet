@@ -64,15 +64,18 @@
                     <div class="panel-body">
                         <div class="text-center" id="author">
 
-                            <img src = @Url.Content(Model.Avatar) style="width:150px;height:150px;">
+                            <img src=@Url.Content(Model.Avatar) style="width:150px;height:150px;">
                             <h3>@Model.GetName()</h3>
                             <small class="label label-warning">@Model.Country</small>
                             @{
-                                if(Model.Description != null)
+                                if (Model.Description != null)
                                 {
                                     <p>@Model.Description</p>
                                 }
                             }
+
+                            <a asp-action="SendMessage" asp-controller="Search" asp-route-id="@Model.Id">Write a message</a>
+
                             <p class="sosmed-author">
                                 <a href="#"><i class="fa fa-facebook" title="Facebook"></i></a>
                                 <a href="#"><i class="fa fa-twitter" title="Twitter"></i></a>

@@ -74,7 +74,7 @@ namespace YouStreet.Data.Controllers
         public IActionResult SendMessage(string id)
         {
             TempData["UserId"] = id;
-            return RedirectToAction("Chat", "Chat", new { userId = id });
+            return RedirectToAction("Chat", "Chat");
         }
     }
 }

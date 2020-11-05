@@ -24,18 +24,27 @@ namespace YouStreet.Data.Controllers
         }
 
         [HttpGet]
-        public IActionResult Chat()
+        public async Task<IActionResult> Chat()
         {
-            ReaderId = TempData["UserId"].ToString();
-            IQueryable<UserMessage> userMessages = _context.UserMessage.AsNoTracking();
-            MessageViewModel mvm = new MessageViewModel
+            if(TempData["UserId"] != null)
             {
-                UserMessages = userMessages.ToList(),
-            };
+                ReaderId = TempData["UserId"].ToString();
+
+            }
+            IEnumerable<UserMessage> userMessage = await _context.UserMessage.ToListAsync();
+
+            MessageViewModel mvm = new MessageViewModel();        
+            userMessage = userMessage.OrderBy(p => p.Date)
+                .Where(p => (p.SenderId == User.Identity.GetUserId() &&
+                p.ReaderId == ReaderId) || (p.SenderId == ReaderId &&
+                p.ReaderId == User.Identity.GetUserId()));
+            mvm.ReaderId = ReaderId;
+            mvm.UserMessages = userMessage;
             return View(mvm);
         }
 
         [HttpPost]
+        
         public async Task<IActionResult> Chat(MessageViewModel model)
         {
             if(ModelState.IsValid)
@@ -49,7 +58,7 @@ namespace YouStreet.Data.Controllers
                 await _context.UserMessage.AddAsync(message);
                 await _context.SaveChangesAsync();
             }
-            return View(model);
+            return Ok();
         }
     }
 }

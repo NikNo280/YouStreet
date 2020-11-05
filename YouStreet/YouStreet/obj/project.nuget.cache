@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0oUab781Hx+I3LgqiIG33vd6cn1N2oXXqK+1kcckA4ruONb2v460YJWOGlu1d+I7ogOcLL8W9ON3qgZalYzo1A==",
+  "dgSpecHash": "7wWDXphUF/TY7NweXyTLHBbDi2hnzOgPFW9w/umycU6Gjn1KubW86NSf0priv8ok+KIz1HuIuiY9wFkEFnVqaw==",
   "success": true,
   "projectFilePath": "C:\\Users\\nikit\\OneDrive\\Documents\\GitHub\\YouStreet\\YouStreet\\YouStreet\\YouStreet.csproj",
   "expectedPackageFiles": [
@@ -58,6 +58,7 @@
     "C:\\Users\\nikit\\.nuget\\packages\\microsoft.owin.security\\3.0.1\\microsoft.owin.security.3.0.1.nupkg.sha512",
     "C:\\Users\\nikit\\.nuget\\packages\\microsoft.owin.security.cookies\\3.0.1\\microsoft.owin.security.cookies.3.0.1.nupkg.sha512",
     "C:\\Users\\nikit\\.nuget\\packages\\microsoft.owin.security.oauth\\3.0.1\\microsoft.owin.security.oauth.3.0.1.nupkg.sha512",
+    "C:\\Users\\nikit\\.nuget\\packages\\microsoft.typescript.msbuild\\4.0.3\\microsoft.typescript.msbuild.4.0.3.nupkg.sha512",
     "C:\\Users\\nikit\\.nuget\\packages\\microsoft.web.infrastructure\\1.0.0\\microsoft.web.infrastructure.1.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\nikit\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",

@@ -79,7 +79,9 @@ namespace YouStreet.Migrations
                     Text = table.Column<string>(nullable: true),
                     Date = table.Column<DateTime>(nullable: false),
                     SenderId = table.Column<string>(nullable: true),
-                    ReaderId = table.Column<string>(nullable: true)
+                    SenderName = table.Column<string>(nullable: true),
+                    ReaderId = table.Column<string>(nullable: true),
+                    ReaderName = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

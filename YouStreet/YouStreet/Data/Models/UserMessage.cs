@@ -14,8 +14,9 @@ namespace YouStreet.Data.Models
         public DateTime Date { get; set; }
 
         public string SenderId { get; set; }
-
+        public string SenderName { get; set; }
         public string ReaderId { get; set; }
+        public string ReaderName { get; set; }
 
         public UserMessage()
         {

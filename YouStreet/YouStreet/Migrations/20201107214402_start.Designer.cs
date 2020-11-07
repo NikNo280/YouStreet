@@ -10,7 +10,7 @@ using YouStreet.Models;
 namespace YouStreet.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20201104165052_start")]
+    [Migration("20201107214402_start")]
     partial class start
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -181,7 +181,13 @@ namespace YouStreet.Migrations
                     b.Property<string>("ReaderId")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ReaderName")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("SenderId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SenderName")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Text")
@@ -192,7 +198,7 @@ namespace YouStreet.Migrations
                     b.ToTable("UserMessage");
                 });
 
-            modelBuilder.Entity("YouStreet.Models.AppUser", b =>
+            modelBuilder.Entity("YouStreet.Models.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -301,7 +307,7 @@ namespace YouStreet.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("YouStreet.Models.AppUser", null)
+                    b.HasOne("YouStreet.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -310,7 +316,7 @@ namespace YouStreet.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("YouStreet.Models.AppUser", null)
+                    b.HasOne("YouStreet.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -325,7 +331,7 @@ namespace YouStreet.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("YouStreet.Models.AppUser", null)
+                    b.HasOne("YouStreet.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -334,7 +340,7 @@ namespace YouStreet.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("YouStreet.Models.AppUser", null)
+                    b.HasOne("YouStreet.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)

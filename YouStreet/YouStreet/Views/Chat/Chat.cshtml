@@ -7,12 +7,16 @@
     <title>SignalR Chat - Metanit.com</title>
 </head>
 <body>
-    <div id="inputForm">
-        <input type="text" id="receiver" value="@Model.ReaderId" disabled>
-        <input type="text" id="message" placeholder="Введите сообщение" />
-        <input type="button" id="sendBtn" value="Отправить" />
-    </div>
+    <form method="post" asp-controller="Chat" asp-action="Chat">
+        <input type="text" id="receiver" value="@Model.ReaderName" disabled>
+        <input asp-for="Text" type="text" id="message" placeholder="Введите сообщение" />
+        <input type="submit" id="sendBtn" value="Отправить" />
+    </form>
     <div id="chatroom"></div>
+    @foreach(var userMessage in Model.UserMessages)
+    {
+        <h4>@userMessage.SenderName : @userMessage.Text</h4>
+    }
     <script src="~/js/signalr/dist/browser/signalr.min.js"></script>
     <script>
         const hubConnection = new signalR.HubConnectionBuilder()

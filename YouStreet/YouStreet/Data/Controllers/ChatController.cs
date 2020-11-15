@@ -61,7 +61,16 @@ namespace YouStreet.Data.Controllers
                 await _context.UserMessage.AddAsync(message);
                 await _context.SaveChangesAsync();
             }
-            return View();
+            IEnumerable<UserMessage> userMessages = await _context.UserMessage.ToListAsync();
+
+            MessageViewModel mvm = new MessageViewModel();
+            userMessages = userMessages.OrderByDescending(p => p.Date)
+                .Where(p => (p.SenderId == User.Identity.GetUserId() &&
+                p.ReaderId == ReaderId) || (p.SenderId == ReaderId &&
+                p.ReaderId == User.Identity.GetUserId()));
+            mvm.ReaderName = ReaderName;
+            mvm.UserMessages = userMessages;
+            return View(mvm);
         }
     }
 }

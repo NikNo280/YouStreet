@@ -1,0 +1,61 @@
+Now listening on: https://localhost:5001
+Now listening on: http://localhost:5000
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Processing request /form-validation.js
+Processing request /js/bootstrap.bundle.min.js
+Processing request /js/bootstrap.bundle.min.js
+Processing request /Account/form-validation.js
+Processing request /Account/form-validation.js
+Processing request /js/bootstrap.bundle.min.js
+Processing request /js/bootstrap.bundle.min.js
+Processing request /Account/form-validation.js
+Invalid password for user 72ee4cd5-8a9a-477d-a8eb-77aad027d8ca.
+User 72ee4cd5-8a9a-477d-a8eb-77aad027d8ca failed to provide the correct password.
+Processing request /js/bootstrap.bundle.min.js
+Processing request /Account/form-validation.js
+Now listening on: https://localhost:5001
+Now listening on: http://localhost:5000
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Processing request /form-validation.js
+Processing request /js/bootstrap.bundle.min.js
+Processing request /js/bootstrap.bundle.min.js
+Processing request /Account/form-validation.js
+Processing request /js/bootstrap.bundle.min.js
+Processing request /Account/form-validation.js
+Processing request /Account/form-validation.js
+Processing request /js/bootstrap.bundle.min.js
+Now listening on: https://localhost:5001
+Now listening on: http://localhost:5000
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Processing request /form-validation.js
+Processing request /js/bootstrap.bundle.min.js
+Processing request /js/bootstrap.bundle.min.js
+Processing request /Account/form-validation.js
+Invalid password for user 72ee4cd5-8a9a-477d-a8eb-77aad027d8ca.
+User 72ee4cd5-8a9a-477d-a8eb-77aad027d8ca failed to provide the correct password.
+Processing request /Account/form-validation.js
+Processing request /js/bootstrap.bundle.min.js
+Processing request /js/bootstrap.bundle.min.js
+Processing request /Search/form-validation.js
+Processing request /Search/UsersListjjn
+Now listening on: https://localhost:5001
+Now listening on: http://localhost:5000
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Processing request /form-validation.js
+Processing request /js/bootstrap.bundle.min.js
+Processing request /js/bootstrap.bundle.min.js
+Processing request /Account/form-validation.js
+Invalid password for user 72ee4cd5-8a9a-477d-a8eb-77aad027d8ca.
+User 72ee4cd5-8a9a-477d-a8eb-77aad027d8ca failed to provide the correct password.
+Processing request /Account/form-validation.js
+Processing request /js/bootstrap.bundle.min.js
+Processing request /Account/Logindsa
+Application is shutting down...

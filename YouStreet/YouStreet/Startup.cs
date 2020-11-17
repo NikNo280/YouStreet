@@ -1,11 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNet.Identity;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
@@ -17,6 +11,10 @@ using YouStreet.Data.Models;
 using YouStreet.Data.Repositories;
 using YouStreet.Hubs;
 using YouStreet.Models;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
+using System.IO;
+using YouStreet.Data.Logger;
 
 namespace YouStreet
 {
@@ -44,7 +42,7 @@ namespace YouStreet
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
             if (env.IsDevelopment())
             {
@@ -73,6 +71,16 @@ namespace YouStreet
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+            });
+
+            loggerFactory.AddFile(Path.Combine(Directory.GetCurrentDirectory(), "GlobalLogger.txt"), 
+                Path.Combine(Directory.GetCurrentDirectory(), "ErrorLogger.txt"));
+            var logger = loggerFactory.CreateLogger("FileLogger");
+
+            app.Run(async (context) =>
+            {
+                logger.LogInformation("Processing request {0}", context.Request.Path);
+                await context.Response.WriteAsync("Resurs Not Found");
             });
         }
     }

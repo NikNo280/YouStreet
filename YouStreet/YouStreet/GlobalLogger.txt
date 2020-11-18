@@ -59,3 +59,276 @@ Processing request /Account/form-validation.js
 Processing request /js/bootstrap.bundle.min.js
 Processing request /Account/Logindsa
 Application is shutting down...
+Now listening on: https://localhost:5001
+Now listening on: http://localhost:5000
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Processing request /js/bootstrap.bundle.min.js
+Processing request /form-validation.js
+Processing request /ds
+Now listening on: https://localhost:5001
+Now listening on: http://localhost:5000
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Processing request /form-validation.js
+Processing request /js/bootstrap.bundle.min.js
+Processing request /dsa
+Application is shutting down...
+Now listening on: https://localhost:5001
+Now listening on: http://localhost:5000
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Processing request /form-validation.js
+Processing request /js/bootstrap.bundle.min.js
+Processing request /dsa
+Processing request //
+Processing request /js/bootstrap.bundle.min.js
+Processing request /form-validation.js
+Now listening on: https://localhost:5001
+Now listening on: http://localhost:5000
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Processing request /form-validation.js
+Processing request /js/bootstrap.bundle.min.js
+Processing request /ds
+Now listening on: https://localhost:5001
+Now listening on: http://localhost:5000
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Processing request /js/bootstrap.bundle.min.js
+Processing request /form-validation.js
+Processing request /ds
+Now listening on: https://localhost:5001
+Now listening on: http://localhost:5000
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Processing request /js/bootstrap.bundle.min.js
+Processing request /form-validation.js
+Processing request /ds
+Now listening on: https://localhost:5001
+Now listening on: http://localhost:5000
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Processing request /form-validation.js
+Processing request /js/bootstrap.bundle.min.js
+Processing request /ds
+Now listening on: https://localhost:5001
+Now listening on: http://localhost:5000
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Processing request /js/bootstrap.bundle.min.js
+Processing request /form-validation.js
+Processing request /ds
+Now listening on: https://localhost:5001
+Now listening on: http://localhost:5000
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Processing request /form-validation.js
+Processing request /js/bootstrap.bundle.min.js
+Processing request /sda
+Now listening on: https://localhost:5001
+Now listening on: http://localhost:5000
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Processing request /form-validation.js
+Processing request /js/bootstrap.bundle.min.js
+Processing request /dsa
+Application is shutting down...
+Now listening on: https://localhost:5001
+Now listening on: http://localhost:5000
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Production
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Processing request /form-validation.js
+Processing request /js/bootstrap.bundle.min.js
+Processing request /ds
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Processing request /form-validation.js
+Processing request /ds
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Processing request /form-validation.js
+Processing request /ds
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Processing request /form-validation.js
+Processing request /ds
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Processing request /form-validation.js
+Processing request /sd
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Processing request /form-validation.js
+Processing request /ds
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Processing request /form-validation.js
+Processing request /ds
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Processing request /form-validation.js
+Processing request /fd
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+An unhandled exception has occurred while executing the request.
+An unhandled exception has occurred while executing the request.
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+An unhandled exception has occurred while executing the request.
+An unhandled exception has occurred while executing the request.
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+An unhandled exception has occurred while executing the request.
+An unhandled exception has occurred while executing the request.
+An unhandled exception has occurred while executing the request.
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+An unhandled exception has occurred while executing the request.
+An unhandled exception has occurred while executing the request.
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+An unhandled exception has occurred while executing the request.
+An unhandled exception has occurred while executing the request.
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+An unhandled exception has occurred while executing the request.
+An unhandled exception has occurred while executing the request.
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+An unhandled exception has occurred while executing the request.
+An unhandled exception has occurred while executing the request.
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+An unhandled exception has occurred while executing the request.
+An unhandled exception has occurred while executing the request.
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+An unhandled exception has occurred while executing the request.
+An unhandled exception has occurred while executing the request.
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+An unhandled exception has occurred while executing the request.
+An unhandled exception has occurred while executing the request.
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+An unhandled exception has occurred while executing the request.
+An unhandled exception has occurred while executing the request.
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+An unhandled exception has occurred while executing the request.
+An unhandled exception has occurred while executing the request.
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+An unhandled exception has occurred while executing the request.
+An unhandled exception has occurred while executing the request.
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+An unhandled exception has occurred while executing the request.
+An unhandled exception has occurred while executing the request.
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+An unhandled exception has occurred while executing the request.
+An unhandled exception has occurred while executing the request.
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+An unhandled exception has occurred while executing the request.
+An unhandled exception has occurred while executing the request.
+An unhandled exception has occurred while executing the request.
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet

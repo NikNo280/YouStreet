@@ -50,9 +50,7 @@ namespace YouStreet
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
+                app.UseStatusCodePagesWithRedirects("~/errors/{0}");
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
@@ -76,12 +74,6 @@ namespace YouStreet
             loggerFactory.AddFile(Path.Combine(Directory.GetCurrentDirectory(), "GlobalLogger.txt"), 
                 Path.Combine(Directory.GetCurrentDirectory(), "ErrorLogger.txt"));
             var logger = loggerFactory.CreateLogger("FileLogger");
-
-            app.Run(async (context) =>
-            {
-                logger.LogInformation("Processing request {0}", context.Request.Path);
-                await context.Response.WriteAsync("Resurs Not Found");
-            });
         }
     }
 }

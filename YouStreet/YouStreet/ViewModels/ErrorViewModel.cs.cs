@@ -1,6 +1,9 @@
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace YouStreet.Models
+namespace YouStreet.ViewModels
 {
     public class ErrorViewModel
     {

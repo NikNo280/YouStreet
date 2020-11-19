@@ -35,7 +35,8 @@ namespace YouStreet
             services.AddTransient<IUserDb, UserRepository>();
             services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(ConfSetting.GetConnectionString("DefaultConnection")));
             services.AddIdentity<ApplicationUser, IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationContext>();
+                .AddEntityFrameworkStores<ApplicationContext>()
+                .AddDefaultTokenProviders();
             services.AddControllersWithViews();
             services.AddSignalR();
             services.AddSingleton<IUserIdProvider, CustomUserIdProvider>();
@@ -50,8 +51,11 @@ namespace YouStreet
             }
             else
             {
-                app.UseStatusCodePagesWithRedirects("~/errors/{0}");
+                app.UseExceptionHandler("/Error/ErrorPro");
+                app.UseHsts();
             }
+            app.UseStatusCodePagesWithReExecute("/Error/Index", "?statusCode={0}");
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 

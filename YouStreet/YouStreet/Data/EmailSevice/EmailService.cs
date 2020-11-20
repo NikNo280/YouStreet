@@ -29,7 +29,7 @@ namespace YouStreet.Data.EmailSevice
             using (var client = new SmtpClient())
             {
                 await client.ConnectAsync("smtp.gmail.com", 465, true);
-                await client.AuthenticateAsync(AppConfiguration["AdminGmail:Gmail"], AppConfiguration["password"]);
+                await client.AuthenticateAsync(AppConfiguration["gmail"], AppConfiguration["password"]);
                 await client.SendAsync(emailMessage);
                 await client.DisconnectAsync(true);
             }

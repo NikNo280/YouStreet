@@ -33,7 +33,7 @@ namespace YouStreet
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddTransient<IUserDb, UserRepository>();
+            services.AddScoped<IUserDb, UserRepository>();
             services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(ConfSetting.GetConnectionString("DefaultConnection")));
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationContext>()
@@ -65,16 +65,13 @@ namespace YouStreet
             app.UseAuthorization();
             app.UseAuthentication();
 
-            app.UseSignalR(route =>
-            {
-                route.MapHub<ChatHub>("/Chat");
-            });
-
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapHub<ChatHub>("/Chat");
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+
             });
 
             loggerFactory.AddFile(Path.Combine(Directory.GetCurrentDirectory(), "GlobalLogger.txt"), 

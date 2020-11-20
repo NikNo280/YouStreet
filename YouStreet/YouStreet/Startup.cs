@@ -15,6 +15,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using System.IO;
 using YouStreet.Data.Logger;
+using YouStreet.Data.EmailSevice;
 
 namespace YouStreet
 {
@@ -40,6 +41,7 @@ namespace YouStreet
             services.AddControllersWithViews();
             services.AddSignalR();
             services.AddSingleton<IUserIdProvider, CustomUserIdProvider>();
+            services.AddTransient<ISender, EmailService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

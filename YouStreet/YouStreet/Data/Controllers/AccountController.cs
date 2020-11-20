@@ -23,14 +23,16 @@ namespace YouStreet.Data.Controllers
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IUserDb _userDb;
         private readonly IWebHostEnvironment _appEnvironment;
+        private readonly ISender _emailService;
 
-        public AccountController(IWebHostEnvironment appEnvironment, Microsoft.AspNetCore.Identity.UserManager<ApplicationUser> userManager,
+        public AccountController(ISender emailService, IWebHostEnvironment appEnvironment, Microsoft.AspNetCore.Identity.UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager, IUserDb UserDb)
         {
             _appEnvironment = appEnvironment;
             _userManager = userManager;
             _signInManager = signInManager;
             _userDb = UserDb;
+            _emailService = emailService;
         }
 
         [HttpGet]
@@ -69,8 +71,7 @@ namespace YouStreet.Data.Controllers
                         "Account",
                         new { userId = user.Id, code = code },
                         protocol: HttpContext.Request.Scheme);
-                    EmailService emailService = new EmailService();
-                    await emailService.SendEmailAsync(model.Email, "Confirm your account",
+                    await _emailService.SendMessage(model.Email, "Confirm your account",
                         $"Подтвердите регистрацию, перейдя по ссылке: <a href='{callbackUrl}'>link</a>");
 
                     ViewData["Text"] = "Для завершения регистрации проверьте электронную почту";

@@ -2,16 +2,23 @@
 using MailKit.Net.Smtp;
 using System.Threading.Tasks;
 using YouStreet.Data.Interfaces;
+using Microsoft.Extensions.Configuration;
 
 namespace YouStreet.Data.EmailSevice
 {
-    public class EmailService
+    public class EmailService : ISender
     {
-        public async Task SendEmailAsync(string email, string subject, string message)
+        public IConfiguration AppConfiguration { get; set; }
+        public EmailService(IConfiguration config)
+        {
+            AppConfiguration = config;
+        }
+
+        public async Task SendMessage(string email, string subject, string message)
         {
             var emailMessage = new MimeMessage();
 
-            emailMessage.From.Add(new MailboxAddress("YouStreet", "nikita.sidorenko.work@gmail.com"));
+            emailMessage.From.Add(new MailboxAddress("YouStreet", AppConfiguration["gmail"]));
             emailMessage.To.Add(new MailboxAddress("", email));
             emailMessage.Subject = subject;
             emailMessage.Body = new TextPart(MimeKit.Text.TextFormat.Html)
@@ -22,7 +29,7 @@ namespace YouStreet.Data.EmailSevice
             using (var client = new SmtpClient())
             {
                 await client.ConnectAsync("smtp.gmail.com", 465, true);
-                await client.AuthenticateAsync("nikita.sidorenko.work@gmail.com", "Heckfyjdbx1");
+                await client.AuthenticateAsync(AppConfiguration["AdminGmail:Gmail"], AppConfiguration["password"]);
                 await client.SendAsync(emailMessage);
                 await client.DisconnectAsync(true);
             }

@@ -15,62 +15,54 @@ namespace YouStreet.Data.Controllers
     public class ChatController : Controller
     {
         private readonly ApplicationContext _context;
-        private readonly IUserDb _userDb;
-        private static string ReaderId;
-        private static string ReaderName;
         public ChatController(ApplicationContext db, IUserDb UserDb)
         {
             _context = db;
-            _userDb = UserDb;
         }
 
         [HttpGet]
-        public async Task<IActionResult> Chat()
+        public async Task<IActionResult> Chat(string id)
         {
-            if(TempData["UserId"] != null)
+            if (id != null)
             {
-                ReaderId = TempData["UserId"].ToString();
-                ReaderName = _userDb.GetUser(ReaderId).UserName;
+                ApplicationUser user = await _context.Users.FirstOrDefaultAsync((p => p.Id == id));
+                if (user != null)
+                {
+                    IEnumerable<UserMessage> userMessages = await _context.UserMessage.ToListAsync();
+                    MessageViewModel mvm = new MessageViewModel();
+                    userMessages = userMessages.OrderByDescending(p => p.Date)
+                        .Where(p => (p.SenderId == User.Identity.GetUserId() &&
+                        p.ReaderId == user.Id) || (p.SenderId == user.Id &&
+                        p.ReaderId == User.Identity.GetUserId()));
+                    mvm.ReaderId = user.Id;
+                    mvm.ReaderName = user.UserName;
+                    mvm.UserMessages = userMessages;
+                    return View(mvm);
+                }
             }
-            IEnumerable<UserMessage> userMessages = await _context.UserMessage.ToListAsync();
-
-            MessageViewModel mvm = new MessageViewModel();        
-            userMessages = userMessages.OrderByDescending(p => p.Date)
-                .Where(p => (p.SenderId == User.Identity.GetUserId() &&
-                p.ReaderId == ReaderId) || (p.SenderId == ReaderId &&
-                p.ReaderId == User.Identity.GetUserId()));
-            mvm.ReaderName = ReaderName;
-            mvm.UserMessages = userMessages;
-            return View(mvm);
+            return NotFound();
         }
 
         [HttpPost]
         
         public async Task<IActionResult> Chat(MessageViewModel model)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 UserMessage message = new UserMessage();
                 message.Id = Guid.NewGuid().ToString();
                 message.Date = DateTime.Now;
                 message.Text = model.Text;
-                message.SenderId = User.Identity.GetUserId();            
-                message.ReaderId = ReaderId;
-                message.ReaderName = _userDb.GetUser(ReaderId).UserName;
+                message.SenderId = User.Identity.GetUserId();
+                message.ReaderId = model.ReaderId;
+                message.ReaderName = model.ReaderName;
                 message.SenderName = User.Identity.Name;
                 await _context.UserMessage.AddAsync(message);
                 await _context.SaveChangesAsync();
+                return Redirect(model.ReaderId);
             }
-            IEnumerable<UserMessage> userMessages = await _context.UserMessage.ToListAsync();
-
-            MessageViewModel mvm = new MessageViewModel();
-            userMessages = userMessages.OrderByDescending(p => p.Date)
-                .Where(p => (p.SenderId == User.Identity.GetUserId() &&
-                p.ReaderId == ReaderId) || (p.SenderId == ReaderId &&
-                p.ReaderId == User.Identity.GetUserId()));
-            mvm.ReaderName = ReaderName;
-            mvm.UserMessages = userMessages;
-            return View(mvm);
+            return NotFound();
         }
+        
     }
 }

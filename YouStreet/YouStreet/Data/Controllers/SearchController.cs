@@ -6,6 +6,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using YouStreet.Data.Interfaces;
+using YouStreet.Data.Models;
 using YouStreet.Models;
 using YouStreet.ViewModels;
 
@@ -15,7 +16,7 @@ namespace YouStreet.Data.Controllers
     public class SearchController : Controller
     {
         private readonly ApplicationContext _context;
-        public SearchController(ApplicationContext db)
+        public SearchController(ApplicationContext db, IUserDb UserDb)
         {
             _context = db;
         }
@@ -69,12 +70,6 @@ namespace YouStreet.Data.Controllers
                 }
             }
             return NotFound();
-        }
-
-        public IActionResult SendMessage(string id)
-        {
-            TempData["UserId"] = id;
-            return RedirectToAction("Chat", "Chat");
         }
     }
 }

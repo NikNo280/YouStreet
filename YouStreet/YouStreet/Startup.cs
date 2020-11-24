@@ -75,7 +75,7 @@ namespace YouStreet
             });
 
             loggerFactory.AddFile(Path.Combine(Directory.GetCurrentDirectory(), "GlobalLogger.txt"), 
-                Path.Combine(Directory.GetCurrentDirectory(), "ErrorLogger.txt"));
+                Path.Combine(Directory.GetCurrentDirectory(), "ErrorLogger.txt")); //TODO
             var logger = loggerFactory.CreateLogger("FileLogger");
         }
     }

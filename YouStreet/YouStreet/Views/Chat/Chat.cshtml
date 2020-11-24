@@ -4,11 +4,11 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>SignalR Chat - Metanit.com</title>
 </head>
 <body>
     <form method="post" asp-controller="Chat" asp-action="Chat">
-        <input type="text" id="receiver" value="@Model.ReaderName" disabled>
+        <input asp-for="ReaderId" type="hidden" id="readerid" value="@Model.ReaderId">
+        <input asp-for="ReaderName" type="hidden" id="readername" value="@Model.ReaderName">
         <input asp-for="Text" type="text" id="message" placeholder="Введите сообщение" />
         <input type="submit" id="sendBtn" value="Отправить" />
     </form>
@@ -43,7 +43,7 @@
         // отправка сообщения на сервер
         document.getElementById("sendBtn").addEventListener("click", function (e) {
             let message = document.getElementById("message").value;
-            let to = document.getElementById("receiver").value;
+            let to = document.getElementById("readername").value;
             hubConnection.invoke("Send", message, to);
         });
 

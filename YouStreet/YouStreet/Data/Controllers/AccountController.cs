@@ -206,7 +206,7 @@ namespace YouStreet.Data.Controllers
             if (model.UploadedFile != null)
             {
                 // путь к папке Files
-                string path = "/Files/" + user.UserName + model.UploadedFile.FileName;
+                string path = "/Files/" + user.UserName + model.UploadedFile.FileName; //TODO
                 // сохраняем файл в папку Files в каталоге wwwroot
                 using (var fileStream = new FileStream(_appEnvironment.WebRootPath + path, FileMode.Create))
                 {

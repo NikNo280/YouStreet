@@ -207,3 +207,7 @@ C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\bin\Debug
 C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\obj\Debug\netcoreapp3.1\Razor\Views\Shared\TextPage.cshtml.g.cs
 C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\obj\Debug\netcoreapp3.1\Razor\Views\Error\Index.cshtml.g.cs
 C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\obj\Debug\netcoreapp3.1\Razor\Views\Chat\Chat.cshtml.g.cs
+C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\obj\Debug\netcoreapp3.1\Razor\Views\Roles\Create.cshtml.g.cs
+C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\obj\Debug\netcoreapp3.1\Razor\Views\Roles\Edit.cshtml.g.cs
+C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\obj\Debug\netcoreapp3.1\Razor\Views\Roles\Index.cshtml.g.cs
+C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\obj\Debug\netcoreapp3.1\Razor\Views\Roles\UserList.cshtml.g.cs

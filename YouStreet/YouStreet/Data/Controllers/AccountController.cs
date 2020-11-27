@@ -62,6 +62,7 @@ namespace YouStreet.Data.Controllers
                 };
                 // добавляем пользователя
                 var result = await _userManager.CreateAsync(user, model.Password);
+                await _userManager.AddToRolesAsync(user, new List<string>() { "standard" });
                 if (result.Succeeded)
                 {
                     // генерация токена для пользователя

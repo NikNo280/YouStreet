@@ -938,3 +938,96 @@ Error. Status code 404
 Error. Status code 404
 Error. Status code 404
 Error. Status code 404
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+An unhandled exception has occurred while executing the request.
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Error. Status code 404
+Error. Status code 404
+User 3c5f68c2-b64e-4389-b72d-93ffa5457b1d validation failed: DuplicateUserName.
+User 3c5f68c2-b64e-4389-b72d-93ffa5457b1d validation failed: DuplicateUserName.
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404

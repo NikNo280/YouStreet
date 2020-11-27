@@ -16,6 +16,7 @@ using Microsoft.Extensions.Logging;
 using System.IO;
 using YouStreet.Data.Logger;
 using YouStreet.Data.EmailSevice;
+using System;
 
 namespace YouStreet
 {
@@ -24,9 +25,17 @@ namespace YouStreet
         private IConfigurationRoot ConfSetting;
 
         public IConfiguration Configuration { get; }
-        public Startup(IWebHostEnvironment hostEnv)
+        public IWebHostEnvironment Environment { get; set; }
+        public Startup(IWebHostEnvironment hostEnv, IConfiguration configuration)
         {
-            ConfSetting = new ConfigurationBuilder().SetBasePath(hostEnv.ContentRootPath).AddJsonFile("dbsettings.json").Build();
+            Environment = hostEnv;
+            ConfSetting = new ConfigurationBuilder()
+                .SetBasePath(hostEnv.ContentRootPath)
+                .AddJsonFile("dbsettings.json")
+                .AddJsonFile("appsettings.json")
+                .AddJsonFile($"appsettings.Development.json")
+                .Build();
+            Configuration = configuration;
         }
 
 
@@ -75,8 +84,8 @@ namespace YouStreet
             });
 
 
-            loggerFactory.AddFile(Path.Combine(Directory.GetCurrentDirectory(), "GlobalLogger.txt"), 
-                Path.Combine(Directory.GetCurrentDirectory(), "ErrorLogger.txt")); //TODO
+            loggerFactory.AddFile(Path.Combine(Directory.GetCurrentDirectory(), Configuration["all-logs"]), 
+                Path.Combine(Directory.GetCurrentDirectory(), Configuration["error-logs"]));
             var logger = loggerFactory.CreateLogger("FileLogger");
         }
     }

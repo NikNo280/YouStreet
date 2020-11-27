@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -24,15 +25,19 @@ namespace YouStreet.Data.Controllers
         private readonly IUserDb _userDb;
         private readonly IWebHostEnvironment _appEnvironment;
         private readonly ISender _emailService;
+        private readonly IConfiguration _configuration;
 
-        public AccountController(ISender emailService, IWebHostEnvironment appEnvironment, Microsoft.AspNetCore.Identity.UserManager<ApplicationUser> userManager,
-            SignInManager<ApplicationUser> signInManager, IUserDb UserDb)
+        public AccountController(ISender emailService, IWebHostEnvironment appEnvironment, 
+            Microsoft.AspNetCore.Identity.UserManager<ApplicationUser> userManager,
+            SignInManager<ApplicationUser> signInManager, IUserDb UserDb,
+            IConfiguration configuration)
         {
             _appEnvironment = appEnvironment;
             _userManager = userManager;
             _signInManager = signInManager;
             _userDb = UserDb;
             _emailService = emailService;
+            _configuration = configuration;
         }
 
         [HttpGet]
@@ -207,7 +212,7 @@ namespace YouStreet.Data.Controllers
             if (model.UploadedFile != null)
             {
                 // путь к папке Files
-                string path = "/Files/" + user.UserName + model.UploadedFile.FileName; //TODO
+                string path = _configuration["ImagePath"] + user.UserName + model.UploadedFile.FileName; //TODO
                 // сохраняем файл в папку Files в каталоге wwwroot
                 using (var fileStream = new FileStream(_appEnvironment.WebRootPath + path, FileMode.Create))
                 {

@@ -211,3 +211,4 @@ C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\obj\Debug
 C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\obj\Debug\netcoreapp3.1\Razor\Views\Roles\Edit.cshtml.g.cs
 C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\obj\Debug\netcoreapp3.1\Razor\Views\Roles\Index.cshtml.g.cs
 C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\obj\Debug\netcoreapp3.1\Razor\Views\Roles\UserList.cshtml.g.cs
+C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\YouStreet - Web Deploy\profile.arm.json

@@ -34,6 +34,7 @@ namespace YouStreet
                 .AddJsonFile("dbsettings.json")
                 .AddJsonFile("appsettings.json")
                 .AddJsonFile($"appsettings.Development.json")
+                .AddJsonFile($"appsettings.Production.json")
                 .Build();
             Configuration = configuration;
         }

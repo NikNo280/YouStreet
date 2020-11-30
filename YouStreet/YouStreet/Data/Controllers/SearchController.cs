@@ -16,7 +16,7 @@ namespace YouStreet.Data.Controllers
     public class SearchController : Controller
     {
         private readonly ApplicationContext _context;
-        public SearchController(ApplicationContext db, IUserDb UserDb)
+        public SearchController(ApplicationContext db)
         {
             _context = db;
         }

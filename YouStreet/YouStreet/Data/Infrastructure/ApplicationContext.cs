@@ -13,7 +13,6 @@ namespace YouStreet.Models
         public ApplicationContext(DbContextOptions<ApplicationContext> options)
             : base(options)
         {
-
         }
 
         public DbSet<ApplicationUser> User { get; set; }

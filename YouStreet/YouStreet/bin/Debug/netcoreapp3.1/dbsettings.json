@@ -1,5 +1,5 @@
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Server=(localdb)\\MSSQLLocalDB;Database=YouStreet;Trusted_Connection=True;MultipleActiveResultSets=true"
+    "DefaultConnection": "Server=tcp:youstreetdbserver.database.windows.net,1433;Initial Catalog=YouStreet_db;Persist Security Info=False;User ID=nikita;Password=Heckfyjdbx1;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
   }
 }

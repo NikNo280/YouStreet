@@ -4,7 +4,7 @@
   "parameters": {
     "resourceGroupName": {
       "type": "string",
-      "defaultValue": "YouStreet20201130224030ResourceGroup",
+      "defaultValue": "YouStreet20201201163011ResourceGroup",
       "metadata": {
         "_parameterType": "resourceGroup",
         "description": "Имя группы ресурсов для ресурса. Рекомендуется поместить ресурсы в одну группу ресурсов для более удобного отслеживания."

@@ -212,3 +212,13 @@ C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\obj\Debug
 C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\obj\Debug\netcoreapp3.1\Razor\Views\Roles\Index.cshtml.g.cs
 C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\obj\Debug\netcoreapp3.1\Razor\Views\Roles\UserList.cshtml.g.cs
 C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\YouStreet - Web Deploy\profile.arm.json
+C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\bin\Debug\netcoreapp3.1\appsettings.Production.json
+C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.json
+C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.YouStreet20201201163011 - Web Deploy.json
+C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\YouStreet20201201163011 - Web Deploy\mssql1.arm.json
+C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\YouStreet20201201163011 - Web Deploy\profile.arm.json
+C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\YouStreet20201201163011 - Web Deploy\signalr1.arm.json
+C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Connections.Client.dll
+C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\bin\Debug\netcoreapp3.1\Microsoft.Azure.SignalR.Common.dll
+C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\bin\Debug\netcoreapp3.1\Microsoft.Azure.SignalR.dll
+C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\bin\Debug\netcoreapp3.1\Microsoft.Azure.SignalR.Protocols.dll

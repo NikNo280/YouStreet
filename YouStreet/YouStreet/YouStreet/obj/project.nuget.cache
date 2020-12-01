@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y25XSaSZ2v4oWRLM8D9S2i1IP8jlPLDWmeacjKH8CSwu82iriJE9Wh0n3jHoXGZPxnkL/v2kyb2xfRYN7nU2aA==",
+  "dgSpecHash": "bYSZRgwRfBjKw8UQRgVKPtIB8Y5SaCH7O0h6TWbGmxRGDZiPNAlSRVEraxsL5OnE2d21cifZsGQNGlixsaGzLA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nikit\\OneDrive\\Documents\\GitHub\\YouStreet\\YouStreet\\YouStreet\\YouStreet.csproj",
+  "projectFilePath": "C:\\Users\\nikit\\OneDrive\\Documents\\GitHub\\YouStreet\\YouStreet\\YouStreet\\YouStreet\\YouStreet.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nikit\\.nuget\\packages\\mailkit\\2.9.0\\mailkit.2.9.0.nupkg.sha512",
     "C:\\Users\\nikit\\.nuget\\packages\\microsoft.aspnet.identity.core\\2.2.3\\microsoft.aspnet.identity.core.2.2.3.nupkg.sha512",

@@ -3,3 +3,34 @@ Hosting environment: Development
 Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet
 Error. Status code 404
 Error. Status code 404
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\YouStreet
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+An unhandled exception has occurred while executing the request.
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\YouStreet
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404
+Error. Status code 404

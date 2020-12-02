@@ -28,7 +28,7 @@ namespace YouStreet.Data.EmailSevice
 
             using (var client = new SmtpClient())
             {
-                await client.ConnectAsync("smtp.gmail.com", 465, true); 
+                await client.ConnectAsync("smtp.mail.ru", 25, false);
                 await client.AuthenticateAsync(_configuration["gmail"], _configuration["password"]);
                 await client.SendAsync(emailMessage);
                 await client.DisconnectAsync(true);

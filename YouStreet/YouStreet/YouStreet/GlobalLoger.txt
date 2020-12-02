@@ -91,3 +91,19 @@ Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\
 Application started. Press Ctrl+C to shut down.
 Hosting environment: Development
 Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\YouStreet
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\YouStreet
+Invalid password for user 71c3b473-3730-451c-809a-d27fdab2471e.
+User 71c3b473-3730-451c-809a-d27fdab2471e failed to provide the correct password.
+Invalid password for user 71c3b473-3730-451c-809a-d27fdab2471e.
+User 71c3b473-3730-451c-809a-d27fdab2471e failed to provide the correct password.
+Invalid password for user 71c3b473-3730-451c-809a-d27fdab2471e.
+User 71c3b473-3730-451c-809a-d27fdab2471e failed to provide the correct password.
+Invalid password for user 71c3b473-3730-451c-809a-d27fdab2471e.
+User 71c3b473-3730-451c-809a-d27fdab2471e failed to provide the correct password.
+Invalid password for user 71c3b473-3730-451c-809a-d27fdab2471e.
+User 71c3b473-3730-451c-809a-d27fdab2471e failed to provide the correct password.
+Invalid password for user 71c3b473-3730-451c-809a-d27fdab2471e.
+User 71c3b473-3730-451c-809a-d27fdab2471e failed to provide the correct password.
+Error. Status code 404

@@ -81,7 +81,7 @@ namespace YouStreet.Data.Controllers
                         $"Подтвердите регистрацию, перейдя по ссылке: <a href='{callbackUrl}'>link</a>");
 
                     ViewData["Text"] = "Для завершения регистрации проверьте электронную почту";
-                    return RedirectToAction("Index", "Home");
+                    return View("~/Views/Shared/TextPage.cshtml");
                 }
                 else
                 {

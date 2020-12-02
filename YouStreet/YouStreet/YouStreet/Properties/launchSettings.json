@@ -14,7 +14,6 @@
   "profiles": {
     "IIS Express": {
       "commandName": "IISExpress",
-      "commandLineArgs": "gmail=nikita.sidorenko.work@gmail.com password=Heckfyjdbx1",
       "launchBrowser": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

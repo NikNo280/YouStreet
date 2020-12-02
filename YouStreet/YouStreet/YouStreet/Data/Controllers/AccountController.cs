@@ -70,7 +70,7 @@ namespace YouStreet.Data.Controllers
                 await _userManager.AddToRolesAsync(user, new List<string>() { "standard" });
                 if (result.Succeeded)
                 {
-                    /*генерация токена для пользователя
+                    //генерация токена для пользователя
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     var callbackUrl = Url.Action(
                         "ConfirmEmail",
@@ -78,7 +78,7 @@ namespace YouStreet.Data.Controllers
                         new { userId = user.Id, code = code },
                         protocol: HttpContext.Request.Scheme);
                     await _emailService.SendMessage(model.Email, "Confirm your account",
-                        $"Подтвердите регистрацию, перейдя по ссылке: <a href='{callbackUrl}'>link</a>");*/
+                        $"Подтвердите регистрацию, перейдя по ссылке: <a href='{callbackUrl}'>link</a>");
 
                     ViewData["Text"] = "Для завершения регистрации проверьте электронную почту";
                     return View("~/Views/Shared/TextPage.cshtml");

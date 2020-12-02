@@ -74,3 +74,10 @@ Error. Status code 404
 Application started. Press Ctrl+C to shut down.
 Hosting environment: Development
 Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\YouStreet
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\YouStreet
+An unhandled exception has occurred while executing the request.
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\nikit\OneDrive\Documents\GitHub\YouStreet\YouStreet\YouStreet\YouStreet
